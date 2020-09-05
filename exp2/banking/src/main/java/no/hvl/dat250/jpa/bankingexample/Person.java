@@ -10,14 +10,14 @@ import lombok.Data;
 public class Person {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.TABLE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private String id;
 
     @ManyToMany
     @JoinTable(name = "join_pers_adr",
             joinColumns = @JoinColumn(name = "person_fk"),
             inverseJoinColumns = @JoinColumn(name = "adress_fk"))
-    private List<Adress> addresses;
+    private List<Address> addresses;
 
     @OneToMany
     private List<CreditCard> cards;

@@ -14,7 +14,7 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
-    <data-source name="banking" uuid="2f2ebaf1-a182-40c1-89ca-b2348e984ad1">
+    <data-source name="banking" uuid="9b7bbea6-6360-458e-bbbc-f0b90a62da14">
       <database-info product="Apache Derby" version="10.14.1.0 - (1808820)" jdbc-version="4.2" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.14.1.0 - (1808820)" dbms="DERBY" exact-version="10.14.1.0" exact-driver-version="10.14">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>

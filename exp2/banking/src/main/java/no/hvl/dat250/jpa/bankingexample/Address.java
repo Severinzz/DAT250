@@ -7,13 +7,15 @@ import java.util.List;
 
 @Entity
 @Data
-public class Bank {
+public class Address {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private String id;
-    private String name;
+    private String street;
+    private int number;
 
-    @OneToMany
-    private List<CreditCard> creditCards;
+    @ManyToMany(mappedBy = "addresses")
+    private List<Person> residents;
+
 }

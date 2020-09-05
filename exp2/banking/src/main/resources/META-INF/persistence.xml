@@ -4,7 +4,7 @@
     version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
     <persistence-unit name="banking" transaction-type="RESOURCE_LOCAL">
 
-        <class>no.hvl.dat250.jpa.bankingexample.Adress</class>
+        <class>no.hvl.dat250.jpa.bankingexample.Address</class>
         <class>no.hvl.dat250.jpa.bankingexample.Bank</class>
         <class>no.hvl.dat250.jpa.bankingexample.CreditCard</class>
         <class>no.hvl.dat250.jpa.bankingexample.Person</class>
@@ -18,7 +18,7 @@
   <property name="javax.persistence.jdbc.password" value="test" />
 
   <!-- EclipseLink should create the database schema automatically -->
-     <property name="eclipselink.ddl-generation" value="create-tables" />
+     <property name="eclipselink.ddl-generation" value="drop-and-create-tables" />
   <property name="eclipselink.ddl-generation.output-mode" value="database" />
  </properties>
 

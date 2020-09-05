@@ -12,7 +12,7 @@ import javax.persistence.Id;
 public class Pincode {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.TABLE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private String id;
     private String code;
     private int count;

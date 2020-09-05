@@ -7,7 +7,7 @@
       <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
       <jdbc-url>jdbc:derby:C:\Users\sever\Desktop\dat250-jpa-examples-master\db\family</jdbc-url>
     </data-source>
-    <data-source source="LOCAL" name="banking" uuid="2f2ebaf1-a182-40c1-89ca-b2348e984ad1">
+    <data-source source="LOCAL" name="banking" uuid="9b7bbea6-6360-458e-bbbc-f0b90a62da14">
       <driver-ref>derby.embedded</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
