@@ -8,7 +8,7 @@ There were no problems with installing and using JPA.
 To inspect the database I used the built-in database tool in IntelliJ. At first there were some versioning problem of some sort with Derby, the project and the database tool, but that was resolved fairly quickly by downgrading from Derby 15.2.0 to 14.2.0.  
 ![alt text](https://github.com/Severinzz/DAT250/blob/exp2/exp2/Images/todo%20databse.jpg "Todo example database")  
 ![alt text](https://github.com/Severinzz/DAT250/blob/exp2/exp2/Images/family%20database.jpg "Family example database")   
-![alt text](https://github.com/Severinzz/DAT250/blob/exp2/exp2/Images/banking%20databse.JPG "Banking database")  
+![alt text](https://github.com/Severinzz/DAT250/blob/exp2/exp2/Images/banking%20databse2.JPG "Banking database")  
 
 * **any pending issues with this assignment which you did not manage to solve**  
 There are no pending issues
