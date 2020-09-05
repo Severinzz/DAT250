@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu Sep 03 13:57:46 CEST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0174-53d4-74bb-00000ea14e90 
+on database directory C:\Users\sever\Desktop\dat250-jpa-examples-master\db\family with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2626b418 
+Loaded from file:/C:/Users/sever/Desktop/dat250-jpa-examples-master/eclipselink/family/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=14.0.2+12-46
+user.dir=C:\Users\sever\Desktop\dat250-jpa-examples-master\eclipselink\family
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

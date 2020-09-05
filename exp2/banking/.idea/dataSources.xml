@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="family" uuid="231cd887-d6df-488c-b859-fdcf432772d9">
+      <driver-ref>derby.embedded</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
+      <jdbc-url>jdbc:derby:C:\Users\sever\Desktop\dat250-jpa-examples-master\db\family</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="banking" uuid="2f2ebaf1-a182-40c1-89ca-b2348e984ad1">
+      <driver-ref>derby.embedded</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
+      <jdbc-url>jdbc:derby:C:\Users\sever\Desktop\dat250-jpa-examples-master\db\banking</jdbc-url>
+    </data-source>
+  </component>
+</project>
