@@ -2,7 +2,8 @@
     - No technical problems
 
 * a link to your code for experiment 2-4 above  
-    - [Source](https://github.com/Severinzz/DAT250/tree/exp4/exp4/counters/counters)
+    - [Source](https://github.com/Severinzz/DAT250/tree/exp4/exp4/counters/counters)  
+    - Did not do the optional tasks 3 and 4
 
 * any pending issues with this assignment which you did not manage to solve
     . No pending issues
