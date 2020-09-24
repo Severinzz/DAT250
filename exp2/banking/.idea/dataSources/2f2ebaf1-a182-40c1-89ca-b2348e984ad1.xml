@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="banking">
+  <database-model serializer="dbm" dbms="DERBY" family-id="DERBY" format-version="4.17">
+    <root id="1">
+      <ServerVersion>10.14.1.0</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="APP"/>
+    <schema id="3" parent="1" name="NULLID"/>
+    <schema id="4" parent="1" name="SQLJ"/>
+    <schema id="5" parent="1" name="SYS"/>
+    <schema id="6" parent="1" name="SYSCAT"/>
+    <schema id="7" parent="1" name="SYSCS_DIAG"/>
+    <schema id="8" parent="1" name="SYSCS_UTIL"/>
+    <schema id="9" parent="1" name="SYSFUN"/>
+    <schema id="10" parent="1" name="SYSIBM"/>
+    <schema id="11" parent="1" name="SYSPROC"/>
+    <schema id="12" parent="1" name="SYSSTAT"/>
+    <schema id="13" parent="1" name="TEST">
+      <Current>1</Current>
+    </schema>
+    <table id="14" parent="13" name="ADRESS"/>
+    <table id="15" parent="13" name="BANK"/>
+    <table id="16" parent="13" name="BANK_CREDITCARD"/>
+    <table id="17" parent="13" name="CREDITCARD"/>
+    <table id="18" parent="13" name="JOIN_PERS_ADR"/>
+    <table id="19" parent="13" name="PERSON"/>
+    <table id="20" parent="13" name="PERSON_CREDITCARD"/>
+    <table id="21" parent="13" name="PINCODE"/>
+    <table id="22" parent="13" name="SEQUENCE"/>
+    <column id="23" parent="14" name="ID">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="24" parent="14" name="NUMBER">
+      <Position>2</Position>
+      <DataType>INTEGER|4s</DataType>
+    </column>
+    <column id="25" parent="14" name="STREET">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <index id="26" parent="14" name="SQL200905165002320">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="27" parent="14" name="SQL200905165002320">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="28" parent="15" name="ID">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="29" parent="15" name="NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <index id="30" parent="15" name="SQL200905165002390">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="31" parent="15" name="SQL200905165002390">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="32" parent="16" name="BANK_ID">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="16" name="CREDITCARDS_CARDNUMBER">
+      <Position>2</Position>
+      <DataType>INTEGER|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="34" parent="16" name="SQL200905165002500">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>BANK_ID
+CREDITCARDS_CARDNUMBER</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="35" parent="16" name="SQL200905165002630">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>BANK_ID</ColNames>
+    </index>
+    <index id="36" parent="16" name="SQL200905165002620">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>CREDITCARDS_CARDNUMBER</ColNames>
+    </index>
+    <key id="37" parent="16" name="SQL200905165002500">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>BANK_ID
+CREDITCARDS_CARDNUMBER</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="38" parent="16" name="BNKCREDITCARDBNKID">
+      <ColNames>BANK_ID</ColNames>
+      <RefTableName>BANK</RefTableName>
+      <RefKeyName>SQL200905165002390</RefKeyName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+    <foreign-key id="39" parent="16" name="BNKCRDTCRDSCRDNMBR">
+      <ColNames>CREDITCARDS_CARDNUMBER</ColNames>
+      <RefTableName>CREDITCARD</RefTableName>
+      <RefKeyName>SQL200905165002410</RefKeyName>
+      <RefColNames>CARDNUMBER</RefColNames>
+    </foreign-key>
+    <column id="40" parent="17" name="CARDNUMBER">
+      <Position>1</Position>
+      <DataType>INTEGER|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="17" name="BALANCE">
+      <Position>2</Position>
+      <DataType>INTEGER|4s</DataType>
+    </column>
+    <column id="42" parent="17" name="LIMIT">
+      <Position>3</Position>
+      <DataType>INTEGER|4s</DataType>
+    </column>
+    <column id="43" parent="17" name="BANK_ID">
+      <Position>4</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="44" parent="17" name="CODE_ID">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <index id="45" parent="17" name="SQL200905165002410">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>CARDNUMBER</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="46" parent="17" name="SQL200905165002570">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>BANK_ID</ColNames>
+    </index>
+    <index id="47" parent="17" name="SQL200905165002550">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>CODE_ID</ColNames>
+    </index>
+    <key id="48" parent="17" name="SQL200905165002410">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>CARDNUMBER</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="49" parent="17" name="CREDITCARD_BANK_ID">
+      <ColNames>BANK_ID</ColNames>
+      <RefTableName>BANK</RefTableName>
+      <RefKeyName>SQL200905165002390</RefKeyName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+    <foreign-key id="50" parent="17" name="CREDITCARD_CODE_ID">
+      <ColNames>CODE_ID</ColNames>
+      <RefTableName>PINCODE</RefTableName>
+      <RefKeyName>SQL200905165002460</RefKeyName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+    <column id="51" parent="18" name="ADRESS_FK">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="52" parent="18" name="PERSON_FK">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="53" parent="18" name="SQL200905165002480">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ADRESS_FK
+PERSON_FK</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="54" parent="18" name="SQL200905165002580">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ADRESS_FK</ColNames>
+    </index>
+    <index id="55" parent="18" name="SQL200905165002590">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>PERSON_FK</ColNames>
+    </index>
+    <key id="56" parent="18" name="SQL200905165002480">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ADRESS_FK
+PERSON_FK</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="57" parent="18" name="JOINPERSADRDRESSFK">
+      <ColNames>ADRESS_FK</ColNames>
+      <RefTableName>ADRESS</RefTableName>
+      <RefKeyName>SQL200905165002320</RefKeyName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+    <foreign-key id="58" parent="18" name="JINPERSADRPERSONFK">
+      <ColNames>PERSON_FK</ColNames>
+      <RefTableName>PERSON</RefTableName>
+      <RefKeyName>SQL200905165002440</RefKeyName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+    <column id="59" parent="19" name="ID">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="60" parent="19" name="SQL200905165002440">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="61" parent="19" name="SQL200905165002440">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="62" parent="20" name="PERSON_ID">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="63" parent="20" name="CARDS_CARDNUMBER">
+      <Position>2</Position>
+      <DataType>INTEGER|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="64" parent="20" name="SQL200905165002530">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>PERSON_ID
+CARDS_CARDNUMBER</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="65" parent="20" name="SQL200905165002640">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>PERSON_ID</ColNames>
+    </index>
+    <index id="66" parent="20" name="SQL200905165002670">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>CARDS_CARDNUMBER</ColNames>
+    </index>
+    <key id="67" parent="20" name="SQL200905165002530">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>PERSON_ID
+CARDS_CARDNUMBER</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="68" parent="20" name="PRSNCRDITCARDPRSND">
+      <ColNames>PERSON_ID</ColNames>
+      <RefTableName>PERSON</RefTableName>
+      <RefKeyName>SQL200905165002440</RefKeyName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+    <foreign-key id="69" parent="20" name="PRSNCRDCRDSCRDNMBR">
+      <ColNames>CARDS_CARDNUMBER</ColNames>
+      <RefTableName>CREDITCARD</RefTableName>
+      <RefKeyName>SQL200905165002410</RefKeyName>
+      <RefColNames>CARDNUMBER</RefColNames>
+    </foreign-key>
+    <column id="70" parent="21" name="ID">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="71" parent="21" name="CODE">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="72" parent="21" name="COUNT">
+      <Position>3</Position>
+      <DataType>INTEGER|4s</DataType>
+    </column>
+    <index id="73" parent="21" name="SQL200905165002460">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="74" parent="21" name="SQL200905165002460">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="75" parent="22" name="SEQ_NAME">
+      <Position>1</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="76" parent="22" name="SEQ_COUNT">
+      <Position>2</Position>
+      <DataType>DECIMAL(15)|3s</DataType>
+    </column>
+    <index id="77" parent="22" name="SQL200905165002680">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>SEQ_NAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="78" parent="22" name="SQL200905165002680">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>SEQ_NAME</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
